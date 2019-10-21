@@ -1,0 +1,93 @@
+//required to create a user
+{
+    "username": {
+        "required": true,
+        "description": "Login name for the user.",
+        "type": "string"
+    },
+    "email": {
+        "required": true,
+        "description": "The email address for the user.",
+        "type": "string"
+    },
+    "password": {
+        "required": true,
+        "description": "Password for the user (never included).",
+        "type": "string"
+    }
+} 
+
+{
+                        "username": {
+                            "required": true,
+                            "description": "Login name for the user.",
+                            "type": "string"
+                        },
+                        "name": {
+                            "required": false,
+                            "description": "Display name for the user.",
+                            "type": "string"
+                        },
+                        "first_name": {
+                            "required": false,
+                            "description": "First name for the user.",
+                            "type": "string"
+                        },
+                        "last_name": {
+                            "required": false,
+                            "description": "Last name for the user.",
+                            "type": "string"
+                        },
+                        "email": {
+                            "required": true,
+                            "description": "The email address for the user.",
+                            "type": "string"
+                        },
+                        "url": {
+                            "required": false,
+                            "description": "URL of the user.",
+                            "type": "string"
+                        },
+                        "description": {
+                            "required": false,
+                            "description": "Description of the user.",
+                            "type": "string"
+                        },
+                        "locale": {
+                            "required": false,
+                            "enum": [
+                                "",
+                                "en_US"
+                            ],
+                            "description": "Locale for the user.",
+                            "type": "string"
+                        },
+                        "nickname": {
+                            "required": false,
+                            "description": "The nickname for the user.",
+                            "type": "string"
+                        },
+                        "slug": {
+                            "required": false,
+                            "description": "An alphanumeric identifier for the user.",
+                            "type": "string"
+                        },
+                        "roles": {
+                            "required": false,
+                            "description": "Roles assigned to the user.",
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "password": {
+                            "required": true,
+                            "description": "Password for the user (never included).",
+                            "type": "string"
+                        },
+                        "meta": {
+                            "required": false,
+                            "description": "Meta fields.",
+                            "type": "object"
+                        }
+                    }
